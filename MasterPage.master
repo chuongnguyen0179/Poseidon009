@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 80%;
+        }
+        .style2
+        {
+            height: 172px;
+        }
+        .style3
+        {
+            height: 172px;
+            width: 12px;
+        }
+        .style4
+        {
+            width: 12px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" class="style1">
+            <tr>
+                <td colspan="3" style="text-align: center">
+                    BÀI KIỂM TRA - HỌ TÊN SINH VIÊN - LỚP</td>
+            </tr>
+            <tr>
+                <td class="style3">
+                    <asp:Menu ID="Menu1" runat="server">
+                        <Items>
+                            <asp:MenuItem Text="Câu 1" Value="Câu 1"></asp:MenuItem>
+                            <asp:MenuItem Text="Câu 2" Value="Câu 2"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td class="style2" align="center" valign="top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="style2">
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
